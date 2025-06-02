@@ -25,9 +25,15 @@ int main() {
 
     // Limpar buffer antes de usar fgets
     while (getchar() != '\n');
+    //serve para limpar o buffer de entrada
+
 
     printf("Nome da Cidade: ");
     fgets(cidade1, sizeof(cidade1), stdin);
+    /*
+    o fgets lê até o fim da linha (incluindo os espaços)
+    já o scanf para de ler ao encontrar um espaço
+    */
 
     printf("População: ");
     scanf("%d", &populacao1);
@@ -88,4 +94,3 @@ int main() {
 
     return 0;
 }
-
