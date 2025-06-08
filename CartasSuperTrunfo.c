@@ -20,15 +20,17 @@ int main() {
     printf("\n==== Cadastro da Carta 1 ====\n");
 
     printf("Estado (A-H): ");
-    scanf(" %c", &estado1);
-
-    printf("Código da Carta (ex: A01):  ");
-    scanf("%s", codigo1);
+    scanf("%c", &estado1);
 
     // Limpar buffer antes de usar fgets
     while (getchar() != '\n');
     //serve para limpar o buffer de entrada
     //buffer: Memória temporária onde os dados digitados ficam antes de serem lido
+
+
+    printf("Código da Carta (ex: A01):  ");
+    scanf("%s", &codigo1);
+
 
     printf("Nome da Cidade: ");
     fgets(cidade1, sizeof(cidade1), stdin);
@@ -36,6 +38,9 @@ int main() {
     o fgets lê até o fim da linha (incluindo os espaços)
     já o scanf para de ler ao encontrar um espaço
     */
+
+     while (getchar() != '\n');
+
 
     printf("População: ");
     scanf("%d", &populacao1);
@@ -57,17 +62,19 @@ int main() {
     // Entrada de dados para a segunda carta
     printf("\n==== Cadastro da Carta 2 ====\n");
 
-    printf("Estado (A-H): ");
-    scanf(" %c", &estado2);
-
-    printf("Código da Carta (ex: B03): ");
-    scanf("%s", codigo2);
+     printf("Estado (A-H): ");
+    scanf("%c", &estado2);
 
     while (getchar() != '\n');
+    
+    printf("Código da Carta (ex: A01):  ");
+    scanf("%s", &codigo2);
 
     printf("Nome da Cidade: ");
     fgets(cidade2, sizeof(cidade2), stdin);
-
+   
+     while (getchar() != '\n');
+     
     printf("População: ");
     scanf("%d", &populacao2);
 
