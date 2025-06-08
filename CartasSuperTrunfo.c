@@ -87,6 +87,7 @@ int main() {
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &pontosT2);
 
+
      // Cálculos da carta 2
     densidade2 = populacao2 / area2;
     pibPerCapita2 = pib2 / populacao2;
@@ -121,3 +122,5 @@ int main() {
 
     return 0;
 }
+
+//
